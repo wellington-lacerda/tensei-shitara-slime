@@ -1,0 +1,72 @@
+.logo-slime {
+  width: 5rem;
+}
+section, [id] {
+    scroll-margin-top: 5.5rem; 
+}
+.txt-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+.pagination {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap:.5rem;
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-family: var(--fontes-sans-reg);
+}
+.card-img  {
+  padding: 1rem .5rem;
+  display: flex;
+  flex-flow: column nowrap;  
+}
+.card-hero {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap:.5rem;
+  padding: 1rem 0;
+}
+.img-thumbnail {
+  width: 10rem;
+  height: 10rem;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--border-color);
+  display: block;
+  object-position: center center;
+  object-fit: cover;
+}
+.content {
+  width: 100%;
+  max-width: 40rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.txt-flex {
+  border-left: 4px solid var(--color-primary);
+  font-family: var(--fonte-sans-bold);
+  font-size: .8rem;
+  padding-left: .5rem;
+}
+@media screen and (min-width:40rem){
+  .logo-slime {
+    width: 3rem;
+  }
+  .card-img {
+    flex-flow: row nowrap;
+  } 
+  section, [id] {
+    scroll-margin-top: 7rem; 
+  }
+}
+@media screen and (min-width:50rem){
+  section, [id] {
+    scroll-margin-top: 4.5rem; 
+  }
+}

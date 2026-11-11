@@ -1,0 +1,137 @@
+h1 {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: clamp(1.5rem,5vw,2rem);
+  font-family: var(--fonte-archivo);
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 0px black;
+}
+h1 .name {
+  color: var(--color-primary-cyan);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+.home {
+  color: var(--text-light);
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+.home picture img {
+  width: 100%;
+  height: 30rem;
+  object-position: center center;
+  object-fit: cover;
+}
+.mobile-home, .desktop-home {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-out {
+  opacity: 0;
+}
+.home .txt {
+  box-shadow: var(--shadow-md);
+  background-image: var(--gradient-hero);
+  margin-top: auto;
+  padding: 1rem 1rem 3rem 1rem;
+  max-width: 45rem;
+  position: absolute;
+  bottom: 0;
+}
+.card-title {
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: .3rem .5rem;
+  display: inline-block;
+  font-size: .7rem;
+  font-family: var(--fonte-sans-reg);
+  background-color: var(--bg-dark-secondary);
+  margin-bottom: 1rem;
+}
+.home p {
+  font-size: 14px;
+  font-family: var(--fonte-sans-reg);
+  max-width: 30rem;
+  margin-bottom: 1rem;
+}
+.home .page-link {
+  display: inline-flex;
+  font-family: var(--fonte-sans-bold);
+  color: var(--text-light);
+  background-color: var(--color-primary);
+  padding: .5rem 1rem;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+.home .page-link:active {
+  background-color: var(--color-primary-hover);
+}
+.page-link img {
+  filter: brightness(0) invert(1);
+}
+.carrossel {
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-flow: row nowrap; 
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.carrossel .box {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+}
+.carrossel input[type="radio"] {
+  display: none;
+}
+.carrossel .rounded-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: var(--radius-full);
+  background-color: var(--text-secondary);
+  transition: .5s ease-in-out;
+}
+.carrossel .circle-active {
+  background-color: var(--text-link);
+}
+.btn-group {
+  background-color: #000;
+  border-radius: var(--radius-full);
+  display: grid;
+  border: none;
+  padding: .5rem;
+  place-items:center;
+}
+.btn-group:active {
+  background-color: var(--color-primary-hover);
+}
+@media screen and (min-width:40rem){
+  .home .txt {
+    box-shadow: var(--shadow-sm);
+    background-image: var(--gradient-card-dark);
+    height: 100%;
+    padding: 2rem;
+    padding-top: 8rem;
+  }
+  .home p {
+    font-size: 20px;
+  }
+} 
+@media screen and (min-width:90rem){
+  .home picture img {
+    height: 30rem;
+  }
+  .home .page-link:hover {
+    background-color: var(--color-primary-hover);
+  }
+  .btn-group:hover {
+    background-color: var(--color-primary-hover);
+  }  
+}

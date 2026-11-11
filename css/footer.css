@@ -1,0 +1,16 @@
+.footer-container {
+  background-color: var(--bg-dark-primary);
+  padding: 2rem;
+}
+.footer-copyright {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted); 
+  line-height: 1.4;
+}
+.pages {
+  display: flex;
+  flex-flow: column nowrap;
+  gap:1rem;
+  padding: 1rem 0;
+}

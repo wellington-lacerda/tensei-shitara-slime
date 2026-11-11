@@ -1,0 +1,52 @@
+header {
+  background-image: var(--gradient-glow);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: var(--shadow-md);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  gap:.5rem;
+}
+.logo-header {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: .8rem;
+  align-items: center;
+  font-family: var(--fonte-archivo);
+}
+.logo-header .card-name {
+  display: flex;
+  flex-flow: column;
+  line-height: 1.2rem;
+}
+.logo-header .name {
+  font-size: 1.5rem;
+  color: var(--text-light);
+}
+.logo-header .lastname {
+  font-size: 1.5rem;
+  color: var(--color-primary-cyan);
+}
+.menu {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width:40rem){
+  .menu {
+    display: none;
+  }
+}
+@media screen and (min-width:90rem){
+  header {
+    width: 90rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

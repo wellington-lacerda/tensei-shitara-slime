@@ -1,0 +1,84 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root {
+  /* ========================================
+     CORES PRIMÁRIAS (AZUL SLIME)
+     ======================================== */
+  --color-primary: #1e88e5;           /* Azul principal (botões e destaques) */
+  --color-primary-hover: #1565c0;     /* Estado de hover/foco dos botões */
+  --color-primary-light: #4bacf7;     /* Azul claro (gradiente e badges) */
+  --color-primary-cyan: #38c1f3;      /* Tom azul-ciano brilhante */
+
+  /* ========================================
+     SUPERFÍCIES E FUNDOS (LIGHT MODE)
+     ======================================== */
+  --bg-page: #f4f7fb;                 /* Fundo da página */
+  --bg-card: #ffffff;                 /* Fundo de cards/seções */
+  --bg-card-secondary: #ebf3fa;       /* Fundo secundário suave (notícias/badges) */
+
+  /* ========================================
+     SUPERFÍCIES E FUNDOS (DARK / SLIME MODE)
+     ======================================== */
+  --bg-dark-primary: #051329;         /* Fundo escuro profundo (header/footer) */
+  --bg-dark-secondary: #0a1e3f;       /* Fundo de cards escuros/sidebar */
+  --bg-dark-card: #0d264d;            /* Cards internos no modo escuro */
+
+  /* ========================================
+     TIPOGRAFIA E TEXTOS
+     ======================================== */
+  --text-primary: #0b1e36;            /* Texto principal escuro */
+  --text-secondary: #4a607a;          /* Subtítulos e textos de apoio */
+  --text-muted: #7e94b0;              /* Textos secundários/datas */
+  --text-light: #ffffff;              /* Texto branco para fundos escuros/botões */
+  --text-link: #1e88e5;               /* Links "Ver todos ->" */
+
+  /* ========================================
+     COMPONENTES & BORDAS
+     ======================================== */
+  --border-color: #e1e8f0;            /* Borda sutil de cards */
+  --border-dark: #1b3863;             /* Borda para elementos no tema escuro */
+  --shadow-sm: 0 2px 8px rgba(15, 35, 65, 0.06);
+  --shadow-md: 0 4px 16px rgba(15, 35, 65, 0.12);
+
+  /* ========================================
+     RAIOS DE BORDA (BORDER RADIUS)
+     ======================================== */
+  --radius-sm: 8px;                   /* Badges e pequenos elementos */
+  --radius-md: 16px;                  /* Cards de notícias e personagens */
+  --radius-lg: 24px;                  /* Banners e containers principais */
+  --radius-full: 50%;              /* Botões pill / arredondados */
+
+  /* ========================================
+     GRADIENTES
+     ======================================== */
+  --gradient-hero: linear-gradient(to bottom, transparent, #152f55);
+  --gradient-card-dark: linear-gradient(85deg, #122848,#1f447c, transparent);
+  --gradient-glow: linear-gradient(to right, #111633, #30385fb9);
+  
+  /* ========================================
+     FONTES
+     ======================================== */
+     
+   --fonte-archivo: 'archivo-black', sans-serif;
+   --fonte-sans-light: 'sansation-light', sans-serif;
+   --fonte-sans-reg: 'sansation-regular', sans-serif;
+   --fonte-sans-bold: 'sansation-bold', sans-serif;
+}
+/* TAGS */
+html {
+    scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg-pages);
+  font-family: var(--fonte-sans-light);
+  max-width: 90rem;
+  margin: auto;
+  position: relative;
+}

@@ -1,0 +1,19 @@
+.container {
+  padding: 1rem;
+  background-color: var(--bg-dark-primary);
+  min-height: 100vh;
+  max-width: 100%;
+}
+.prev-page {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--text-muted);
+  padding: .5rem;
+  display: inline-flex;
+  margin-bottom: 1rem;
+  font-family: var(--fonte-sans-bold);
+  background-image: var(--gradient-glow);
+  border-radius: var(--radius-lg);
+}

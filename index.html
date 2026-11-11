@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+  <title>Tensei shitara slime datta ken | fan-site</title>
+</head>
+<body>
+  <header>
+    <div class="logo-header">
+      <img src="assets/images/slime.png" alt="logo do slime cabeçalho" class="logo-slime">
+      <div class="card-name">
+        <span class="name">Rimuru</span>
+        <span class="lastname">Tempest</span>
+      </div>
+    </div>
+    <button type="button" class="menu">
+      <img src="assets/images/menu-hamburguer.svg" alt="icone de navegação" class="menu-img">
+    </button>
+    <nav class="navbar">
+      <div class="logo-nav">
+        <img src="assets/images/slime.png" alt="logo do slime da navegação" class="logo-slime">
+        <div class="card-name">
+          <span class="name">Rimuru</span>
+          <span class="lastname">Tempest</span>
+        </div>
+        <p class="info">O mundo de Tensura em um so lugar</p>
+      </div>
+      <ul>
+        <li> <a href="#home" >
+          <img src="assets/images/home.svg" alt="icone home">
+          <span>Início</span>
+        </a> </li>
+        <li> <a href="#person" >
+          <img src="assets/images/person.svg" alt="icone person">
+          <span>Personagens</span>
+        </a> </li>
+        <li> <a href="#galery" >
+          <img src="assets/images/galery.svg" alt="icone galery">
+          <span>Galeria</span>
+        </a> </li>
+        <li> <a href="#footer" >
+          <img src="assets/images/link.svg" alt="icone link">
+          <span>Links</span>
+        </a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- section home -->
+    <section class="home" id="home">
+      <picture>
+        <source media="(max-width: 40rem)" srcset="assets/images/bg-home-rimuru-mobile.jpg" type="image/jpg" class="mobile-home">
+        <img src="assets/images/bg-home-rimuru-desktop.jpg" alt="imagens dos personagem" class="desktop-home">
+      </picture>
+      <div class="txt">
+        <span class="card-title">Tensei Shitara Slime Datta Ken</span>
+        <h1>
+          Bem-vindo ao mundo de 
+          <span class="name">Rimuru Tempest!</span>
+        </h1>
+        <p>
+        Explore o universo de Tensei Shitara Datta Ken, conheça os personagens, descubra suas habilidades e acompanhe as últimas novidades!
+        </p>
+        <a href="pages/rimuru.html" class="page-link txt-flex">
+          <span class="txt-name">Conheça a história de Rimuru</span>
+          <img src="assets/images/seta.svg" alt="seta pra frnte">
+        </a>
+        <div class="carrossel">
+          <button class="prev btn-group">
+            <img src="assets/images/prev.svg" alt="icon prev">
+          </button>          
+          <div class="box">
+            <input type="radio" name="person" id="rimuru" checked>
+            <input type="radio" name="person" id="merlin">
+            <input type="radio" name="person" id="diablo">
+            <label for="rimuru" class="rounded-circle circle-active"></label>
+            <label for="merlin" class="rounded-circle"></label>
+            <label for="diablo" class="rounded-circle"></label>
+          </div>
+          <button class="next btn-group">
+            <img src="assets/images/next.svg" alt="icon next">
+          </button>          
+        </div>
+      </div>
+    </section>
+    <section class="person card-img" id="person">
+      <div>
+        <div class="txt-flex">
+          <h2>Personagens em destaque</h2>
+          <a href="pages/person.html" class="pagination">
+            ver todos 
+            <img src="assets/images/seta.svg" alt="seta para frente">
+          </a>
+        </div>
+        <div class="cards-person card-hero">
+          <!-- aqui ficará os cards dos personagens -->
+          <img src="assets/images/perfil-rimuru.jpg" alt="rimuru tempest" class="img-thumbnail">
+          <img src="assets/images/perfil-veldora.jpg" alt="veldora tempest" class="img-thumbnail">
+          <img src="assets/images/perfil-shion.jpg" alt="shion" class="img-thumbnail">
+          <img src="assets/images/perfil-milin.jpg" alt="milin nava" class="img-thumbnail">
+        </div>
+      </div>
+      <div class="content">
+        <p>porta dui faucibus eripuit tibique vel class ancillae ius doming ei invidunt nominavi sapien mauris maluisset quisque vehicula brute facilisi intellegat fabulas mazim blandit dolorumporro moderatius prompta quaerendum referrentur quidam mattis cetero augue mentitum mei antiopam possit homero inani qui vocent pulvinar velit nostrum aperiri deseruisse mediocritatem dictas postulant</p>
+      </div>
+    </section>
+    <!-- section galery -->
+    <section class="galery card-img" id="galery">
+      <div>
+        <div class="txt-flex">
+          <h2>Galeria</h2>
+          <a href="pages/galery.html" class="pagination">
+            ver todos 
+            <img src="assets/images/seta.svg" alt="seta para frente">
+          </a>
+        </div>
+        
+        <div class="cards-galery card-hero">
+          <!-- aqui ficara as imagens -->
+          <img src="assets/images/galeria-rimuru-01.jpg" alt="galeria rimuru" class="img-thumbnail">
+          <img src="assets/images/galeria-rimuru-02.jpg" alt="galeria rimuru" class="img-thumbnail">
+          <img src="assets/images/galeria-rimuru-03.jpg" alt="galeria rimuru" class="img-thumbnail">
+          <img src="assets/images/galeria-rimuru-04.jpg" alt="gapetia rimuru" class="img-thumbnail">
+        </div>
+      </div>
+      
+      <div class="content">
+        <p>porta dui faucibus eripuit tibique vel class ancillae ius doming ei invidunt nominavi sapien mauris maluisset quisque vehicula brute facilisi intellegat fabulas mazim blandit dolorumporro moderatius prompta quaerendum referrentur quidam mattis cetero augue mentitum mei antiopam possit homero inani qui vocent pulvinar velit nostrum aperiri deseruisse mediocritatem dictas postulant</p>
+      </div>
+      
+    </section>
+  </main>
+  <footer class="footer-container" id="footer">
+    <nav class="nav-link">
+      <div class="logo-footer">
+        <div class="logo-nav">
+          <img src="assets/images/slime.png" alt="logo do slime da navegação" class="logo-slime">
+          <div class="card-name">
+            <span class="name">Rimuru</span>
+            <span class="lastname">Tempest</span>
+          </div>
+          <p class="info">O mundo de Tensura em um so lugar</p>
+        </div>
+      </div>
+      <div class="pages">
+        <ul class="page-links">
+          <li> <a href="sobre.html">Sobre</a> </li>
+          <li> <a href="contato.html">Contato</a> </li>
+          <li> <a href="link.html">Termos de uso</a> </li>
+        </ul>
+        <div class="footer-copyright">
+          <p>© 2026 <strong>Rimuru Tempest Fan Site</strong>. Obra original © Fuse / Micro Magazine.</p>
+          <p>Feito por fã, para fãs. ❤️</p>
+        </div>
+      </div>
+      <ul class="social">
+        <li> <a href="https://www.instagram.com/wellington_lacerda.art?psln=djd5aHYxaDNwbjRn" target="_blank">
+          <img src="assets/images/instagram.svg" alt="instagram">
+        </a> </li>
+        <li> <a href="https://github.com/wellington-lacerda" target="_blank">
+          <img src="assets/images/github.svg" alt="github">
+        </a> </li>
+        <li> <a href="https://youtube.com/@wellington-lacerda-dev?si=8iacr0-03_PL5k3L" target="_blank">
+          <img src="assets/images/youtube.svg" alt="youtube">
+        </a> </li>
+      </ul>
+    </nav>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
